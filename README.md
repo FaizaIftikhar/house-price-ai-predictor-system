@@ -1,50 +1,62 @@
 # 🏡 House Price AI Predictor System
 
-An end-to-end Machine Learning project that predicts house prices based on property features using regression models and advanced feature engineering techniques.
+An end-to-end **Machine Learning Regression** project that predicts residential house prices based on property characteristics using advanced regression models and feature engineering techniques.
 
-## 🚀 Project Overview
+The project demonstrates the complete Machine Learning lifecycle—from data collection and preprocessing to model deployment with **Streamlit Cloud**.
 
-This project builds a complete machine learning pipeline for predicting house prices using real-world housing data. It includes data preprocessing, exploratory data analysis, feature engineering, model training, hyperparameter tuning, and deployment-ready architecture.
+---
 
-## 🧠 Key Features
+## 🌐 Live Demo
 
-- End-to-end ML pipeline
-- Data cleaning & missing value handling
-- Feature engineering (house age, total area, etc.)
-- Multiple ML models (Linear Regression, Random Forest, XGBoost)
-- Model comparison and evaluation
-- Hyperparameter tuning for performance optimization
-- Trained model serialization using Joblib
-- Deployment-ready structure (Streamlit compatible)
+🚀 **Try the application here:**
 
-## 📊 Technologies Used
+**https://house-price-ai-predictor-system-2eqthcthrc37ksikpmfkjz.streamlit.app/**
 
-- Python
-- Pandas & NumPy
-- Scikit-learn
-- XGBoost
-- Matplotlib & Seaborn
-- Streamlit (for deployment)
+No installation required—simply open the link and start predicting house prices.
 
-## 🎯 Model Performance
+---
 
-- Evaluated using R² Score, MAE, and RMSE
-- Best model: XGBoost Regressor
+## 📸 Application Preview
 
-## 📁 Project Structure
+<img width="947" height="433" alt="image" src="https://github.com/user-attachments/assets/ae3aff83-bf71-4379-8a2b-a01ef1e21323" />
 
-- Data preprocessing pipeline
-- Model training scripts
-- Saved trained model (.pkl)
-- Deployment-ready app structure
+<img width="950" height="436" alt="image" src="https://github.com/user-attachments/assets/f9f5a803-334b-45b6-a939-d3dd40dcea0f" />
 
-## 🚀 Future Improvements
+---
 
-- Add SHAP explainability
-- Improve UI with advanced Streamlit dashboard
-- Deploy on cloud (Streamlit Cloud / Render)
-- Integrate real-time data input system
+# 🚀 Project Overview
 
-## 👨‍💻 Author
+House price prediction is one of the most common regression problems in Machine Learning. This project aims to accurately estimate residential property prices based on various housing features using supervised learning algorithms.
 
-Developed as a portfolio project for demonstrating real-world machine learning skills in predictive modeling and deployment.
+The project follows a complete production-ready Machine Learning workflow:
+
+- Data Collection
+- Data Understanding & Exploratory Data Analysis (EDA)
+- Data Cleaning & Preprocessing
+- Feature Engineering
+- Feature Selection
+- Train-Test Split
+- Model Training
+- Hyperparameter Tuning
+- Model Evaluation
+- Model Serialization using Joblib
+- Interactive Web Application Development using Streamlit
+- Cloud Deployment using Streamlit Community Cloud
+
+---
+
+# 📂 Dataset
+
+This project uses the **House Prices Dataset** from **OpenML**.
+
+Dataset loaded using Scikit-learn:
+
+```python
+from sklearn.datasets import fetch_openml
+
+housing = fetch_openml(
+    name="house_prices",
+    as_frame=True
+)
+
+df = housing.frame
